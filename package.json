@@ -6,12 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "api:install": "pip install -r backend/requirements.txt",
+    "api:train": "cd backend && python train_model.py",
+    "api:start": "cd backend && python -m uvicorn api:app --host 0.0.0.0 --port 8000 --reload",
+    "api": "npm run api:start"
   },
   "dependencies": {
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.16.0",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
