@@ -203,20 +203,6 @@ Interactive 5-phase technical pipeline flowchart with deep-dive explanations, di
 
 ---
 
-## 🏆 Hackathon Presentation Script
-
-**0:00–0:15** — Open the landing page. Point to the animated neural network visualization and live stats climbing to 95% accuracy.
-
-**0:15–0:30** — Click "Launch AI Dashboard." Show the federated visualizer with 4 hospitals syncing. Press "Trigger Aggregation Round." Watch cryptographic SHA-256 hashes generate in the audit console.
-
-**0:30–0:50** — Go to "Patient Risk." Adjust the glucose slider to 185 mg/dL and smoking to "Yes." Click "Predict." Show the radial ring animate to 87% High Risk with AI confidence at 94%.
-
-**0:50–1:10** — Switch to "What-If Simulator." Drag exercise from 1→5 days/week and smoking to "No." Watch the risk drop by 25%+ in real-time. Drop the wow line: *"This is what preventive medicine looks like powered by federated AI."*
-
-**1:10–1:30** — Show "Explainable AI" SHAP bars and "Bias Monitor" demographic parity badges. Close with *"Built on federated learning — zero patient records were ever shared."*
-
----
-
 ## 🔒 Privacy Guarantee
 
 > Raw patient electronic health records (EHR) **never leave** the local hospital firewall.
