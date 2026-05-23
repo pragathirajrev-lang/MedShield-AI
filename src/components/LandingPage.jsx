@@ -22,26 +22,22 @@ export default function LandingPage({ onSelectRole }) {
   const [stats, setStats] = useState({
     accuracy: 91,
     privacy: 100,
-    records: 48900,
-    hospitals: 8
+    records: 166,
+    hospitals: 4
   });
 
   // Animated ticking stats on load
   useEffect(() => {
     const interval = setInterval(() => {
       setStats(prev => {
-        const nextAcc = prev.accuracy < 95 ? prev.accuracy + 1 : 95;
-        const nextRec = prev.records < 50000 ? prev.records + 110 : 50000;
-        const nextHosp = prev.hospitals < 10 ? prev.hospitals + 1 : 10;
-        
-        if (nextAcc === 95 && nextRec === 50000 && nextHosp === 10) {
+        if (prev.accuracy >= 95 && prev.records >= 166 && prev.hospitals >= 4) {
           clearInterval(interval);
         }
         return {
-          accuracy: nextAcc,
+          accuracy: 95,
           privacy: 100,
-          records: nextRec,
-          hospitals: nextHosp
+          records: 166,
+          hospitals: 4
         };
       });
     }, 15);
@@ -171,8 +167,8 @@ export default function LandingPage({ onSelectRole }) {
 
             <div className="glass-panel p-4 rounded-xl border-slate-800/60 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-12 h-12 bg-purple-500/5 rounded-full filter blur-md" />
-              <div className="text-3xl font-extrabold text-purple-400 tracking-tight">{(stats.records / 1000).toFixed(1)}k+</div>
-              <div className="text-xs text-slate-400 mt-1 font-medium">Simulated Records</div>
+              <div className="text-3xl font-extrabold text-purple-400 tracking-tight">{stats.records}</div>
+              <div className="text-xs text-slate-400 mt-1 font-medium">Patient Records</div>
             </div>
 
             <div className="glass-panel p-4 rounded-xl border-slate-800/60 relative overflow-hidden group">
@@ -297,10 +293,10 @@ export default function LandingPage({ onSelectRole }) {
             {/* Hospitals Grid */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { name: "Hospital A", sub: "Metro General", records: "18,400 Patients", color: "from-cyan-500 to-blue-600" },
-                { name: "Hospital B", sub: "St. Jude Cardiac", records: "12,900 Patients", color: "from-purple-500 to-indigo-600" },
-                { name: "Hospital C", sub: "Northside Network", records: "15,200 Patients", color: "from-emerald-500 to-teal-600" },
-                { name: "Hospital D", sub: "Pediatric Trust", records: "6,500 Patients", color: "from-rose-500 to-pink-600" }
+                { name: "Hospital A", sub: "Metro General", records: "42 Patients", color: "from-cyan-500 to-blue-600" },
+                { name: "Hospital B", sub: "St. Jude Cardiac", records: "42 Patients", color: "from-purple-500 to-indigo-600" },
+                { name: "Hospital C", sub: "Northside Network", records: "41 Patients", color: "from-emerald-500 to-teal-600" },
+                { name: "Hospital D", sub: "Pediatric Trust", records: "41 Patients", color: "from-rose-500 to-pink-600" }
               ].map((h, idx) => (
                 <div key={idx} className="glass-panel p-4 rounded-xl border-slate-800/60 text-center group hover:border-cyan-500/20 transition-all">
                   <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${h.color} mx-auto flex items-center justify-center font-bold text-sm text-white shadow-lg`}>

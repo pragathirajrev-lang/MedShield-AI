@@ -117,10 +117,10 @@ export default function FederatedVisualizer() {
   };
 
   const hospitals = [
-    { id: "A", name: "Metro General Hospital", records: "18,400 Patients", coords: { x: 50, y: 50 }, color: "from-cyan-500 to-blue-500", ping: "12ms" },
-    { id: "B", name: "St. Jude Cardiac Center", records: "12,900 Patients", coords: { x: 550, y: 50 }, color: "from-purple-500 to-indigo-500", ping: "24ms" },
-    { id: "C", name: "Northside Clinical Network", records: "15,200 Patients", coords: { x: 50, y: 350 }, color: "from-emerald-500 to-teal-500", ping: "8ms" },
-    { id: "D", name: "County Pediatric Trust", records: "6,500 Patients", coords: { x: 550, y: 350 }, color: "from-rose-500 to-pink-500", ping: "38ms" }
+    { id: "A", name: "Metro General Hospital", records: "42 Patients", coords: { x: 50, y: 50 }, color: "from-cyan-500 to-blue-500", ping: "12ms" },
+    { id: "B", name: "St. Jude Cardiac Center", records: "42 Patients", coords: { x: 550, y: 50 }, color: "from-purple-500 to-indigo-500", ping: "24ms" },
+    { id: "C", name: "Northside Clinical Network", records: "41 Patients", coords: { x: 50, y: 350 }, color: "from-emerald-500 to-teal-500", ping: "8ms" },
+    { id: "D", name: "County Pediatric Trust", records: "41 Patients", coords: { x: 550, y: 350 }, color: "from-rose-500 to-pink-500", ping: "38ms" }
   ];
 
   return (

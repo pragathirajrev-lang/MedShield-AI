@@ -26,10 +26,10 @@ export default function HospitalCollab() {
   };
 
   const hospitalNodes = [
-    { name: "Metro General Hospital", location: "New York, USA", ping: "12ms", records: "18,400 Patients", status: "Online", keys: "E4B2-74F9" },
-    { name: "St. Jude Cardiac Center", location: "London, UK", ping: "24ms", records: "12,900 Patients", status: "Online", keys: "F9C3-D80A" },
-    { name: "Northside Clinical Network", location: "Frankfurt, GER", ping: "8ms", records: "15,200 Patients", status: "Online", keys: "A2C1-FF7C" },
-    { name: "County Pediatric Trust", location: "Tokyo, JPN", ping: "38ms", records: "6,500 Patients", status: "Online", keys: "88B4-FF90" }
+    { name: "Metro General Hospital", location: "New York, USA", ping: "12ms", records: "42 Patients", status: "Online", keys: "E4B2-74F9" },
+    { name: "St. Jude Cardiac Center", location: "London, UK", ping: "24ms", records: "42 Patients", status: "Online", keys: "F9C3-D80A" },
+    { name: "Northside Clinical Network", location: "Frankfurt, GER", ping: "8ms", records: "41 Patients", status: "Online", keys: "A2C1-FF7C" },
+    { name: "County Pediatric Trust", location: "Tokyo, JPN", ping: "38ms", records: "41 Patients", status: "Online", keys: "88B4-FF90" }
   ];
 
   return (
